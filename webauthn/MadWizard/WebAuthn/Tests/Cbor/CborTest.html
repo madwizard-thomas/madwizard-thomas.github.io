@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>MadWizard\WebAuthn\Tests\Cbor\CborTest | WebAuthn PHP server documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:MadWizard_WebAuthn_Tests_Cbor_CborTest" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">WebAuthn PHP server documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../MadWizard.html">MadWizard</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn.html">WebAuthn</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Tests.html">Tests</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Tests/Cbor.html">Cbor</a></li><li class="backslash">\</li><li>CborTest</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CborTest
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CborTest</strong>        extends <abbr title="PHPUnit\Framework\TestCase">TestCase</abbr>        (<a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testVectors">testVectors</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testInPlace">testInPlace</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testCorruptArray">testCorruptArray</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testCorruptArrayInPlace">testCorruptArrayInPlace</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testUnsupportedMapKey">testUnsupportedMapKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testUnsupportedIndefiniteLength">testUnsupportedIndefiniteLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testReservedFloat">testReservedFloat</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testBreakOutsideIndefinite">testBreakOutsideIndefinite</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testReserved">testReserved</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testAdditionalData">testAdditionalData</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testEncodeInteger">testEncodeInteger</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testEncodeText">testEncodeText</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testEncodeBytes">testEncodeBytes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testEncodeMapValues">testEncodeMapValues</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testEncodeMap">testEncodeMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testDuplicateMapKey">testDuplicateMapKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_testVectors">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L33">line 33</a></div>
+        <code>                    
+    <strong>testVectors</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testInPlace">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L67">line 67</a></div>
+        <code>                    
+    <strong>testInPlace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testCorruptArray">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L85">line 85</a></div>
+        <code>                    
+    <strong>testCorruptArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testCorruptArrayInPlace">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L99">line 99</a></div>
+        <code>                    
+    <strong>testCorruptArrayInPlace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testUnsupportedMapKey">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L113">line 113</a></div>
+        <code>                    
+    <strong>testUnsupportedMapKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testUnsupportedIndefiniteLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L129">line 129</a></div>
+        <code>                    
+    <strong>testUnsupportedIndefiniteLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testReservedFloat">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L145">line 145</a></div>
+        <code>                    
+    <strong>testReservedFloat</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testBreakOutsideIndefinite">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L154">line 154</a></div>
+        <code>                    
+    <strong>testBreakOutsideIndefinite</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testReserved">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L164">line 164</a></div>
+        <code>                    
+    <strong>testReserved</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testAdditionalData">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L174">line 174</a></div>
+        <code>                    
+    <strong>testAdditionalData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testEncodeInteger">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L183">line 183</a></div>
+        <code>                    
+    <strong>testEncodeInteger</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testEncodeText">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L211">line 211</a></div>
+        <code>                    
+    <strong>testEncodeText</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testEncodeBytes">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L218">line 218</a></div>
+        <code>                    
+    <strong>testEncodeBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testEncodeMapValues">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L225">line 225</a></div>
+        <code>                    
+    <strong>testEncodeMapValues</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testEncodeMap">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L256">line 256</a></div>
+        <code>                    
+    <strong>testEncodeMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testDuplicateMapKey">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Cbor/CborTest.php#L270">line 270</a></div>
+        <code>                    
+    <strong>testDuplicateMapKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

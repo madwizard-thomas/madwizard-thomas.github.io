@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>MadWizard\WebAuthn\Crypto\RsaKey | WebAuthn PHP server documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:MadWizard_WebAuthn_Crypto_RsaKey" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">WebAuthn PHP server documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../MadWizard.html">MadWizard</a></li><li class="backslash">\</li><li><a href="../../../MadWizard/WebAuthn.html">WebAuthn</a></li><li class="backslash">\</li><li><a href="../../../MadWizard/WebAuthn/Crypto.html">Crypto</a></li><li class="backslash">\</li><li>RsaKey</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            RsaKey
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>RsaKey</strong>        extends <a href="../../../MadWizard/WebAuthn/Crypto/CoseKey.html"><abbr title="MadWizard\WebAuthn\Crypto\CoseKey">CoseKey</abbr></a>        (<a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>COSE_KTY_EC2</td>
+                <td class="last">
+                    <p><em>EC2 key type</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COSE_KTY_RSA</td>
+                <td class="last">
+                    <p><em>RSA key type</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COSE_KEY_PARAM_KTY</td>
+                <td class="last">
+                    <p><em>Identification of the key type</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COSE_KEY_PARAM_KID</td>
+                <td class="last">
+                    <p><em>Key identification value</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COSE_KEY_PARAM_ALG</td>
+                <td class="last">
+                    <p><em>Key usage restriction to this algorithm</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>KTP_N</td>
+                <td class="last">
+                    <p><em>RSA modulus n key type parameter (key type 3, RSA)</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>KTP_E</td>
+                <td class="last">
+                    <p><em>RSA exponent e key type parameter (key type 3, RSA)</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SUPPORTED_ALGORITHMS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $modulus, <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $exponent, int $algorithm)
+        
+                                            <p>CoseKey constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseCbor">parseCbor</a>(<a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $buffer, int $offset = 0, int $endOffset = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../MadWizard/WebAuthn/Crypto/CoseKey.html#method_parseCbor"><abbr title="MadWizard\WebAuthn\Crypto\CoseKey">CoseKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCbor">getCbor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAlgorithm">getAlgorithm</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../MadWizard/WebAuthn/Crypto/CoseKey.html#method_getAlgorithm"><abbr title="MadWizard\WebAuthn\Crypto\CoseKey">CoseKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifySignature">verifySignature</a>(<a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $data, <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $signature)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_algorithmSupported">algorithmSupported</a>(int $algorithm)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromCborData">fromCborData</a>(array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModulus">getModulus</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExponent">getExponent</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_asPem">asPem</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L44">line 44</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $modulus, <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $exponent, int $algorithm)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CoseKey constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a></td>
+                <td>$modulus</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a></td>
+                <td>$exponent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$algorithm</td>
+                <td>IANA COSE Algorithm</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseCbor">
+        <div class="location">in <a href="../../../MadWizard/WebAuthn/Crypto/CoseKey.html#method_parseCbor"><abbr title="MadWizard\WebAuthn\Crypto\CoseKey">CoseKey</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/CoseKey.php#L61">line 61</a></div>
+        <code>        static            
+    <strong>parseCbor</strong>(<a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $buffer, int $offset = 0, int $endOffset = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a></td>
+                <td>$buffer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$endOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCbor">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L135">line 135</a></div>
+        <code>                    
+    <strong>getCbor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAlgorithm">
+        <div class="location">in <a href="../../../MadWizard/WebAuthn/Crypto/CoseKey.html#method_getAlgorithm"><abbr title="MadWizard\WebAuthn\Crypto\CoseKey">CoseKey</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/CoseKey.php#L97">line 97</a></div>
+        <code>                    int
+    <strong>getAlgorithm</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifySignature">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L71">line 71</a></div>
+        <code>                    
+    <strong>verifySignature</strong>(<a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $data, <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a> $signature)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a></td>
+                <td>$signature</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_algorithmSupported">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L146">line 146</a></div>
+        <code>            protected        
+    <strong>algorithmSupported</strong>(int $algorithm)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$algorithm</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fromCborData">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L51">line 51</a></div>
+        <code>        static            
+    <strong>fromCborData</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModulus">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L102">line 102</a></div>
+        <code>                    <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a>
+    <strong>getModulus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExponent">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L110">line 110</a></div>
+        <code>                    <a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a>
+    <strong>getExponent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_asPem">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Crypto/RsaKey.php#L115">line 115</a></div>
+        <code>                    
+    <strong>asPem</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

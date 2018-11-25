@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>MadWizard\WebAuthn\Server\Registration\AttestationVerifier | WebAuthn PHP server documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:MadWizard_WebAuthn_Server_Registration_AttestationVerifier" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">WebAuthn PHP server documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../MadWizard.html">MadWizard</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn.html">WebAuthn</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Server.html">Server</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Server/Registration.html">Registration</a></li><li class="backslash">\</li><li>AttestationVerifier</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AttestationVerifier
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AttestationVerifier</strong>        extends <a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a>        (<a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/Registration/AttestationVerifier.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../MadWizard/WebAuthn/Attestation/Registry/AttestationFormatRegistryInterface.html"><abbr title="MadWizard\WebAuthn\Attestation\Registry\AttestationFormatRegistryInterface">AttestationFormatRegistryInterface</abbr></a> $registry)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifyOrigin">verifyOrigin</a>(string $origin, <a href="../../../../MadWizard/WebAuthn/Web/Origin.html"><abbr title="MadWizard\WebAuthn\Web\Origin">Origin</abbr></a> $rpOrigin)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_verifyOrigin"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifyRpIdHash">verifyRpIdHash</a>(<a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a> $authData, <a href="../../../../MadWizard/WebAuthn/Server/AbstractContext.html"><abbr title="MadWizard\WebAuthn\Server\AbstractContext">AbstractContext</abbr></a> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_verifyRpIdHash"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifyUser">verifyUser</a>(<a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a> $authData, <a href="../../../../MadWizard/WebAuthn/Server/AbstractContext.html"><abbr title="MadWizard\WebAuthn\Server\AbstractContext">AbstractContext</abbr></a> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_verifyUser"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateClientData">validateClientData</a>(array $clientData)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_validateClientData"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkTokenBinding">checkTokenBinding</a>(array $tokenBinding)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_checkTokenBinding"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClientDataHash">getClientDataHash</a>(<a href="../../../../MadWizard/WebAuthn/Dom/AuthenticatorResponseInterface.html"><abbr title="MadWizard\WebAuthn\Dom\AuthenticatorResponseInterface">AuthenticatorResponseInterface</abbr></a> $response)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_getClientDataHash"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../MadWizard/WebAuthn/Server/Registration/AttestationResult.html"><abbr title="MadWizard\WebAuthn\Server\Registration\AttestationResult">AttestationResult</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verify">verify</a>(<a href="../../../../MadWizard/WebAuthn/Dom/PublicKeyCredentialInterface.html"><abbr title="MadWizard\WebAuthn\Dom\PublicKeyCredentialInterface">PublicKeyCredentialInterface</abbr></a> $credential, <a href="../../../../MadWizard/WebAuthn/Server/Registration/AttestationContext.html"><abbr title="MadWizard\WebAuthn\Server\Registration\AttestationContext">AttestationContext</abbr></a> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/Registration/AttestationVerifier.php#L23">line 23</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../MadWizard/WebAuthn/Attestation/Registry/AttestationFormatRegistryInterface.html"><abbr title="MadWizard\WebAuthn\Attestation\Registry\AttestationFormatRegistryInterface">AttestationFormatRegistryInterface</abbr></a> $registry)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Attestation/Registry/AttestationFormatRegistryInterface.html"><abbr title="MadWizard\WebAuthn\Attestation\Registry\AttestationFormatRegistryInterface">AttestationFormatRegistryInterface</abbr></a></td>
+                <td>$registry</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyOrigin">
+        <div class="location">in <a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_verifyOrigin"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/AbstractVerifier.php#L22">line 22</a></div>
+        <code>            protected        
+    <strong>verifyOrigin</strong>(string $origin, <a href="../../../../MadWizard/WebAuthn/Web/Origin.html"><abbr title="MadWizard\WebAuthn\Web\Origin">Origin</abbr></a> $rpOrigin)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$origin</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Web/Origin.html"><abbr title="MadWizard\WebAuthn\Web\Origin">Origin</abbr></a></td>
+                <td>$rpOrigin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyRpIdHash">
+        <div class="location">in <a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_verifyRpIdHash"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/AbstractVerifier.php#L33">line 33</a></div>
+        <code>            protected        
+    <strong>verifyRpIdHash</strong>(<a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a> $authData, <a href="../../../../MadWizard/WebAuthn/Server/AbstractContext.html"><abbr title="MadWizard\WebAuthn\Server\AbstractContext">AbstractContext</abbr></a> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a></td>
+                <td>$authData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Server/AbstractContext.html"><abbr title="MadWizard\WebAuthn\Server\AbstractContext">AbstractContext</abbr></a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyUser">
+        <div class="location">in <a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_verifyUser"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/AbstractVerifier.php#L40">line 40</a></div>
+        <code>            protected        
+    <strong>verifyUser</strong>(<a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a> $authData, <a href="../../../../MadWizard/WebAuthn/Server/AbstractContext.html"><abbr title="MadWizard\WebAuthn\Server\AbstractContext">AbstractContext</abbr></a> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a></td>
+                <td>$authData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Server/AbstractContext.html"><abbr title="MadWizard\WebAuthn\Server\AbstractContext">AbstractContext</abbr></a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateClientData">
+        <div class="location">in <a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_validateClientData"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/AbstractVerifier.php#L55">line 55</a></div>
+        <code>            protected        
+    <strong>validateClientData</strong>(array $clientData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clientData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkTokenBinding">
+        <div class="location">in <a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_checkTokenBinding"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/AbstractVerifier.php#L73">line 73</a></div>
+        <code>            protected        
+    <strong>checkTokenBinding</strong>(array $tokenBinding)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$tokenBinding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClientDataHash">
+        <div class="location">in <a href="../../../../MadWizard/WebAuthn/Server/AbstractVerifier.html#method_getClientDataHash"><abbr title="MadWizard\WebAuthn\Server\AbstractVerifier">AbstractVerifier</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/AbstractVerifier.php#L100">line 100</a></div>
+        <code>            protected        
+    <strong>getClientDataHash</strong>(<a href="../../../../MadWizard/WebAuthn/Dom/AuthenticatorResponseInterface.html"><abbr title="MadWizard\WebAuthn\Dom\AuthenticatorResponseInterface">AuthenticatorResponseInterface</abbr></a> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Dom/AuthenticatorResponseInterface.html"><abbr title="MadWizard\WebAuthn\Dom\AuthenticatorResponseInterface">AuthenticatorResponseInterface</abbr></a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verify">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Server/Registration/AttestationVerifier.php#L37">line 37</a></div>
+        <code>                    <a href="../../../../MadWizard/WebAuthn/Server/Registration/AttestationResult.html"><abbr title="MadWizard\WebAuthn\Server\Registration\AttestationResult">AttestationResult</abbr></a>
+    <strong>verify</strong>(<a href="../../../../MadWizard/WebAuthn/Dom/PublicKeyCredentialInterface.html"><abbr title="MadWizard\WebAuthn\Dom\PublicKeyCredentialInterface">PublicKeyCredentialInterface</abbr></a> $credential, <a href="../../../../MadWizard/WebAuthn/Server/Registration/AttestationContext.html"><abbr title="MadWizard\WebAuthn\Server\Registration\AttestationContext">AttestationContext</abbr></a> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Dom/PublicKeyCredentialInterface.html"><abbr title="MadWizard\WebAuthn\Dom\PublicKeyCredentialInterface">PublicKeyCredentialInterface</abbr></a></td>
+                <td>$credential</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Server/Registration/AttestationContext.html"><abbr title="MadWizard\WebAuthn\Server\Registration\AttestationContext">AttestationContext</abbr></a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../MadWizard/WebAuthn/Server/Registration/AttestationResult.html"><abbr title="MadWizard\WebAuthn\Server\Registration\AttestationResult">AttestationResult</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Exception/VerificationException.html"><abbr title="MadWizard\WebAuthn\Exception\VerificationException">VerificationException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Exception/ParseException.html"><abbr title="MadWizard\WebAuthn\Exception\ParseException">ParseException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Exception/WebAuthnException.html"><abbr title="MadWizard\WebAuthn\Exception\WebAuthnException">WebAuthnException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

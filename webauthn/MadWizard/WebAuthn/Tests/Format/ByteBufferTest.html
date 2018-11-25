@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>MadWizard\WebAuthn\Tests\Format\ByteBufferTest | WebAuthn PHP server documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:MadWizard_WebAuthn_Tests_Format_ByteBufferTest" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">WebAuthn PHP server documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../MadWizard.html">MadWizard</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn.html">WebAuthn</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Tests.html">Tests</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Tests/Format.html">Format</a></li><li class="backslash">\</li><li>ByteBufferTest</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ByteBufferTest
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ByteBufferTest</strong>        extends <abbr title="PHPUnit\Framework\TestCase">TestCase</abbr>        (<a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testIsEmpty">testIsEmpty</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetLength">testGetLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testRandomBuffer">testRandomBuffer</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testFromHex">testFromHex</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetBytes">testGetBytes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetBytesBoundsOffset">testGetBytesBoundsOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetBytesBoundsLength">testGetBytesBoundsLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetByteVal">testGetByteVal</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetByteValBounds">testGetByteValBounds</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint16Val">testGetUint16Val</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint16ValBoundsOffset">testGetUint16ValBoundsOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint16ValBoundsLength">testGetUint16ValBoundsLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint32Val">testGetUint32Val</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint32ValBoundsOffset">testGetUint32ValBoundsOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint32ValBoundsLength">testGetUint32ValBoundsLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint32ValLimits">testGetUint32ValLimits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint64Val">testGetUint64Val</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint64ValLimits">testGetUint64ValLimits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint64ValBoundsOffset">testGetUint64ValBoundsOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetUint64ValBoundsLength">testGetUint64ValBoundsLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetFloatVal">testGetFloatVal</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetFloatValBoundsOffset">testGetFloatValBoundsOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetFloatValBoundsLength">testGetFloatValBoundsLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetDoubleVal">testGetDoubleVal</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetDoubleValBoundsOffset">testGetDoubleValBoundsOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetDoubleValBoundsLength">testGetDoubleValBoundsLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetHalfFloatVal">testGetHalfFloatVal</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetHalfFloatValBoundsOffset">testGetHalfFloatValBoundsOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetHalfFloatValBoundsLength">testGetHalfFloatValBoundsLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetBinaryString">testGetBinaryString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetHex">testGetHex</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testEquals">testEquals</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testSerialize">testSerialize</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testInvalidHex">testInvalidHex</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testInvalidHexLenth">testInvalidHexLenth</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testFromBase64Url">testFromBase64Url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testGetBase64Url">testGetBase64Url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_testIsEmpty">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L15">line 15</a></div>
+        <code>                    
+    <strong>testIsEmpty</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L23">line 23</a></div>
+        <code>                    
+    <strong>testGetLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testRandomBuffer">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L31">line 31</a></div>
+        <code>                    
+    <strong>testRandomBuffer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testFromHex">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L37">line 37</a></div>
+        <code>                    
+    <strong>testFromHex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetBytes">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L46">line 46</a></div>
+        <code>                    
+    <strong>testGetBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetBytesBoundsOffset">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L59">line 59</a></div>
+        <code>                    
+    <strong>testGetBytesBoundsOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetBytesBoundsLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L69">line 69</a></div>
+        <code>                    
+    <strong>testGetBytesBoundsLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetByteVal">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L76">line 76</a></div>
+        <code>                    
+    <strong>testGetByteVal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetByteValBounds">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L87">line 87</a></div>
+        <code>                    
+    <strong>testGetByteValBounds</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint16Val">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L93">line 93</a></div>
+        <code>                    
+    <strong>testGetUint16Val</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint16ValBoundsOffset">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L103">line 103</a></div>
+        <code>                    
+    <strong>testGetUint16ValBoundsOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint16ValBoundsLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L112">line 112</a></div>
+        <code>                    
+    <strong>testGetUint16ValBoundsLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint32Val">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L118">line 118</a></div>
+        <code>                    
+    <strong>testGetUint32Val</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint32ValBoundsOffset">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L129">line 129</a></div>
+        <code>                    
+    <strong>testGetUint32ValBoundsOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint32ValBoundsLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L138">line 138</a></div>
+        <code>                    
+    <strong>testGetUint32ValBoundsLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint32ValLimits">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L147">line 147</a></div>
+        <code>                    
+    <strong>testGetUint32ValLimits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint64Val">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L159">line 159</a></div>
+        <code>                    
+    <strong>testGetUint64Val</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint64ValLimits">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L173">line 173</a></div>
+        <code>                    
+    <strong>testGetUint64ValLimits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint64ValBoundsOffset">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L188">line 188</a></div>
+        <code>                    
+    <strong>testGetUint64ValBoundsOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetUint64ValBoundsLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L197">line 197</a></div>
+        <code>                    
+    <strong>testGetUint64ValBoundsLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetFloatVal">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L203">line 203</a></div>
+        <code>                    
+    <strong>testGetFloatVal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetFloatValBoundsOffset">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L218">line 218</a></div>
+        <code>                    
+    <strong>testGetFloatValBoundsOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetFloatValBoundsLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L227">line 227</a></div>
+        <code>                    
+    <strong>testGetFloatValBoundsLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetDoubleVal">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L233">line 233</a></div>
+        <code>                    
+    <strong>testGetDoubleVal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetDoubleValBoundsOffset">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L247">line 247</a></div>
+        <code>                    
+    <strong>testGetDoubleValBoundsOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetDoubleValBoundsLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L256">line 256</a></div>
+        <code>                    
+    <strong>testGetDoubleValBoundsLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetHalfFloatVal">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L262">line 262</a></div>
+        <code>                    
+    <strong>testGetHalfFloatVal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetHalfFloatValBoundsOffset">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L299">line 299</a></div>
+        <code>                    
+    <strong>testGetHalfFloatValBoundsOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetHalfFloatValBoundsLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L308">line 308</a></div>
+        <code>                    
+    <strong>testGetHalfFloatValBoundsLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetBinaryString">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L314">line 314</a></div>
+        <code>                    
+    <strong>testGetBinaryString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetHex">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L321">line 321</a></div>
+        <code>                    
+    <strong>testGetHex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testEquals">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L327">line 327</a></div>
+        <code>                    
+    <strong>testEquals</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testSerialize">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L333">line 333</a></div>
+        <code>                    
+    <strong>testSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testInvalidHex">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L346">line 346</a></div>
+        <code>                    
+    <strong>testInvalidHex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testInvalidHexLenth">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L352">line 352</a></div>
+        <code>                    
+    <strong>testInvalidHexLenth</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testFromBase64Url">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L358">line 358</a></div>
+        <code>                    
+    <strong>testFromBase64Url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGetBase64Url">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/tests/Format/ByteBufferTest.php#L364">line 364</a></div>
+        <code>                    
+    <strong>testGetBase64Url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

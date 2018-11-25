@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>MadWizard\WebAuthn\Attestation\Verifier\PackedAttestationVerifier | WebAuthn PHP server documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:MadWizard_WebAuthn_Attestation_Verifier_PackedAttestationVerifier" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">WebAuthn PHP server documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../MadWizard.html">MadWizard</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn.html">WebAuthn</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Attestation.html">Attestation</a></li><li class="backslash">\</li><li><a href="../../../../MadWizard/WebAuthn/Attestation/Verifier.html">Verifier</a></li><li class="backslash">\</li><li>PackedAttestationVerifier</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PackedAttestationVerifier
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PackedAttestationVerifier</strong>        extends <a href="../../../../MadWizard/WebAuthn/Attestation/Verifier/AbstractAttestationVerifier.html"><abbr title="MadWizard\WebAuthn\Attestation\Verifier\AbstractAttestationVerifier">AbstractAttestationVerifier</abbr></a>        (<a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Attestation/Verifier/PackedAttestationVerifier.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkAaguidExtension">checkAaguidExtension</a>(<a href="../../../../MadWizard/WebAuthn/Pki/CertificateDetailsInterface.html"><abbr title="MadWizard\WebAuthn\Pki\CertificateDetailsInterface">CertificateDetailsInterface</abbr></a> $cert, <a href="../../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a>|null $validAaguid)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../MadWizard/WebAuthn/Attestation/Verifier/AbstractAttestationVerifier.html#method_checkAaguidExtension"><abbr title="MadWizard\WebAuthn\Attestation\Verifier\AbstractAttestationVerifier">AbstractAttestationVerifier</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../MadWizard/WebAuthn/Pki/CertificateParserInterface.html"><abbr title="MadWizard\WebAuthn\Pki\CertificateParserInterface">CertificateParserInterface</abbr></a>|null $certificateParser = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verify">verify</a>(<a href="../../../../MadWizard/WebAuthn/Attestation/Statement/AttestationStatementInterface.html"><abbr title="MadWizard\WebAuthn\Attestation\Statement\AttestationStatementInterface">AttestationStatementInterface</abbr></a> $attStmt, <a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a> $authenticatorData, string $clientDataHash)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_checkAaguidExtension">
+        <div class="location">in <a href="../../../../MadWizard/WebAuthn/Attestation/Verifier/AbstractAttestationVerifier.html#method_checkAaguidExtension"><abbr title="MadWizard\WebAuthn\Attestation\Verifier\AbstractAttestationVerifier">AbstractAttestationVerifier</abbr></a> at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Attestation/Verifier/AbstractAttestationVerifier.php#L13">line 13</a></div>
+        <code>            protected        
+    <strong>checkAaguidExtension</strong>(<a href="../../../../MadWizard/WebAuthn/Pki/CertificateDetailsInterface.html"><abbr title="MadWizard\WebAuthn\Pki\CertificateDetailsInterface">CertificateDetailsInterface</abbr></a> $cert, <a href="../../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a>|null $validAaguid)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Pki/CertificateDetailsInterface.html"><abbr title="MadWizard\WebAuthn\Pki\CertificateDetailsInterface">CertificateDetailsInterface</abbr></a></td>
+                <td>$cert</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Format/ByteBuffer.html"><abbr title="MadWizard\WebAuthn\Format\ByteBuffer">ByteBuffer</abbr></a>|null</td>
+                <td>$validAaguid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Attestation/Verifier/PackedAttestationVerifier.php#L29">line 29</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../MadWizard/WebAuthn/Pki/CertificateParserInterface.html"><abbr title="MadWizard\WebAuthn\Pki\CertificateParserInterface">CertificateParserInterface</abbr></a>|null $certificateParser = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Pki/CertificateParserInterface.html"><abbr title="MadWizard\WebAuthn\Pki\CertificateParserInterface">CertificateParserInterface</abbr></a>|null</td>
+                <td>$certificateParser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verify">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Attestation/Verifier/PackedAttestationVerifier.php#L37">line 37</a></div>
+        <code>                    
+    <strong>verify</strong>(<a href="../../../../MadWizard/WebAuthn/Attestation/Statement/AttestationStatementInterface.html"><abbr title="MadWizard\WebAuthn\Attestation\Statement\AttestationStatementInterface">AttestationStatementInterface</abbr></a> $attStmt, <a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a> $authenticatorData, string $clientDataHash)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Attestation/Statement/AttestationStatementInterface.html"><abbr title="MadWizard\WebAuthn\Attestation\Statement\AttestationStatementInterface">AttestationStatementInterface</abbr></a></td>
+                <td>$attStmt</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../MadWizard/WebAuthn/Attestation/AuthenticatorData.html"><abbr title="MadWizard\WebAuthn\Attestation\AuthenticatorData">AuthenticatorData</abbr></a></td>
+                <td>$authenticatorData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clientDataHash</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

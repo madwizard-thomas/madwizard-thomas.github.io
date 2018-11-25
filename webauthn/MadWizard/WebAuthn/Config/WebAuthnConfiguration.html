@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>MadWizard\WebAuthn\Config\WebAuthnConfiguration | WebAuthn PHP server documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:MadWizard_WebAuthn_Config_WebAuthnConfiguration" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">WebAuthn PHP server documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../MadWizard.html">MadWizard</a></li><li class="backslash">\</li><li><a href="../../../MadWizard/WebAuthn.html">WebAuthn</a></li><li class="backslash">\</li><li><a href="../../../MadWizard/WebAuthn/Config.html">Config</a></li><li class="backslash">\</li><li>WebAuthnConfiguration</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            WebAuthnConfiguration
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>WebAuthnConfiguration</strong>        implements
+        <a href="../../../MadWizard/WebAuthn/Config/WebAuthnConfigurationInterface.html"><abbr title="MadWizard\WebAuthn\Config\WebAuthnConfigurationInterface">WebAuthnConfigurationInterface</abbr></a>        (<a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_CHALLENGE_LENGTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MIN_CHALLENGE_LENGTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SUPPORTED_ALGORITHMS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelyingPartyId">getRelyingPartyId</a>()
+        
+                                            <p>Returns the configured RelyingParty</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEffectiveRelyingPartyId">getEffectiveRelyingPartyId</a>()
+        
+                                            <p>Returns the configured relying party id when set, otherwise the returned value will be the domain name
+part of the relying party origin.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRelyingPartyName">setRelyingPartyName</a>(string|null $rpName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRelyingPartyId">setRelyingPartyId</a>(string|null $rpId)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../MadWizard/WebAuthn/Dom/PublicKeyCredentialRpEntity.html"><abbr title="MadWizard\WebAuthn\Dom\PublicKeyCredentialRpEntity">PublicKeyCredentialRpEntity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelyingPartyEntity">getRelyingPartyEntity</a>()
+        
+                                            <p>Returns a PublicKeyCredentialRpEntity structure based on the configured values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRelyingPartyOrigin">setRelyingPartyOrigin</a>(string|null $origin)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelyingPartyOrigin">getRelyingPartyOrigin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChallengeLength">getChallengeLength</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setChallengeLength">setChallengeLength</a>(int $challengeLength)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAllowedAlgorithms">setAllowedAlgorithms</a>(array $algorithms)
+        
+                                            <p>Sets which algorithms are allowed for the credentials that are created. Array of constants from the COSEAlgorithm
+enumeration (e.g. COSEAlgorithm::ES256)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllowedAlgorithms">getAllowedAlgorithms</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttestationFormats">getAttestationFormats</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRelyingPartyIconUrl">setRelyingPartyIconUrl</a>(string|null $url)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelyingPartyIconUrl">getRelyingPartyIconUrl</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L59">line 59</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelyingPartyId">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L67">line 67</a></div>
+        <code>                    null|string
+    <strong>getRelyingPartyId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the configured RelyingParty</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEffectiveRelyingPartyId">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L72">line 72</a></div>
+        <code>                    string
+    <strong>getEffectiveRelyingPartyId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the configured relying party id when set, otherwise the returned value will be the domain name
+part of the relying party origin.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRelyingPartyName">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L88">line 88</a></div>
+        <code>                    
+    <strong>setRelyingPartyName</strong>(string|null $rpName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$rpName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRelyingPartyId">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L99">line 99</a></div>
+        <code>                    
+    <strong>setRelyingPartyId</strong>(string|null $rpId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$rpId</td>
+                <td>A valid domain string that identifies the Relying Party
+on whose behalf a given registration or authentication ceremony is being performed</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../MadWizard/WebAuthn/Exception/ConfigurationException.html"><abbr title="MadWizard\WebAuthn\Exception\ConfigurationException">ConfigurationException</abbr></a></td>
+                <td>if rpId is not a valid domain name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://www.w3.org/TR/webauthn/#relying-party-identifier">https://www.w3.org/TR/webauthn/#relying-party-identifier</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelyingPartyEntity">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L110">line 110</a></div>
+        <code>                    <a href="../../../MadWizard/WebAuthn/Dom/PublicKeyCredentialRpEntity.html"><abbr title="MadWizard\WebAuthn\Dom\PublicKeyCredentialRpEntity">PublicKeyCredentialRpEntity</abbr></a>
+    <strong>getRelyingPartyEntity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a PublicKeyCredentialRpEntity structure based on the configured values</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../MadWizard/WebAuthn/Dom/PublicKeyCredentialRpEntity.html"><abbr title="MadWizard\WebAuthn\Dom\PublicKeyCredentialRpEntity">PublicKeyCredentialRpEntity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRelyingPartyOrigin">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L122">line 122</a></div>
+        <code>                    
+    <strong>setRelyingPartyOrigin</strong>(string|null $origin)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$origin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelyingPartyOrigin">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L135">line 135</a></div>
+        <code>                    
+    <strong>getRelyingPartyOrigin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChallengeLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L143">line 143</a></div>
+        <code>                    
+    <strong>getChallengeLength</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setChallengeLength">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L148">line 148</a></div>
+        <code>                    
+    <strong>setChallengeLength</strong>(int $challengeLength)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$challengeLength</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAllowedAlgorithms">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L163">line 163</a></div>
+        <code>                    
+    <strong>setAllowedAlgorithms</strong>(array $algorithms)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets which algorithms are allowed for the credentials that are created. Array of constants from the COSEAlgorithm
+enumeration (e.g. COSEAlgorithm::ES256)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$algorithms</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../MadWizard/WebAuthn/Exception/ConfigurationException.html"><abbr title="MadWizard\WebAuthn\Exception\ConfigurationException">ConfigurationException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../../MadWizard/WebAuthn/Dom/CoseAlgorithm.html"><abbr title="MadWizard\WebAuthn\Dom\CoseAlgorithm">CoseAlgorithm</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllowedAlgorithms">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L182">line 182</a></div>
+        <code>                    
+    <strong>getAllowedAlgorithms</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttestationFormats">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L190">line 190</a></div>
+        <code>                    
+    <strong>getAttestationFormats</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRelyingPartyIconUrl">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L196">line 196</a></div>
+        <code>                    
+    <strong>setRelyingPartyIconUrl</strong>(string|null $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelyingPartyIconUrl">
+        <div class="location">at         <a href="https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Config/WebAuthnConfiguration.php#L205">line 205</a></div>
+        <code>                    
+    <strong>getRelyingPartyIconUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
